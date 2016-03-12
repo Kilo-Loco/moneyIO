@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C8391181C94013400E7AA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8391171C94013400E7AA60 /* AppDelegate.swift */; };
+		7C83911A1C94013400E7AA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8391191C94013400E7AA60 /* ViewController.swift */; };
+		7C83911D1C94013400E7AA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C83911B1C94013400E7AA60 /* Main.storyboard */; };
+		7C8391201C94013400E7AA60 /* Money_IO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */; };
+		7C8391221C94013400E7AA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8391211C94013400E7AA60 /* Assets.xcassets */; };
+		7C8391251C94013400E7AA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C8391141C94013400E7AA60 /* Money IO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money IO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8391171C94013400E7AA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C8391191C94013400E7AA60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C83911C1C94013400E7AA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C83911F1C94013400E7AA60 /* Money_IO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Money_IO.xcdatamodel; sourceTree = "<group>"; };
+		7C8391211C94013400E7AA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C8391241C94013400E7AA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C8391261C94013400E7AA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C8391111C94013400E7AA60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C83910B1C94013400E7AA60 = {
+			isa = PBXGroup;
+			children = (
+				7C8391161C94013400E7AA60 /* Money IO */,
+				7C8391151C94013400E7AA60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C8391151C94013400E7AA60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C8391141C94013400E7AA60 /* Money IO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C8391161C94013400E7AA60 /* Money IO */ = {
+			isa = PBXGroup;
+			children = (
+				7C8391171C94013400E7AA60 /* AppDelegate.swift */,
+				7C8391191C94013400E7AA60 /* ViewController.swift */,
+				7C83911B1C94013400E7AA60 /* Main.storyboard */,
+				7C8391211C94013400E7AA60 /* Assets.xcassets */,
+				7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */,
+				7C8391261C94013400E7AA60 /* Info.plist */,
+				7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */,
+			);
+			path = "Money IO";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C8391131C94013400E7AA60 /* Money IO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C8391291C94013400E7AA60 /* Build configuration list for PBXNativeTarget "Money IO" */;
+			buildPhases = (
+				7C8391101C94013400E7AA60 /* Sources */,
+				7C8391111C94013400E7AA60 /* Frameworks */,
+				7C8391121C94013400E7AA60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Money IO";
+			productName = "Money IO";
+			productReference = 7C8391141C94013400E7AA60 /* Money IO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C83910C1C94013400E7AA60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Kilo Loco";
+				TargetAttributes = {
+					7C8391131C94013400E7AA60 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 7C83910F1C94013400E7AA60 /* Build configuration list for PBXProject "Money IO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C83910B1C94013400E7AA60;
+			productRefGroup = 7C8391151C94013400E7AA60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C8391131C94013400E7AA60 /* Money IO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C8391121C94013400E7AA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8391251C94013400E7AA60 /* LaunchScreen.storyboard in Resources */,
+				7C8391221C94013400E7AA60 /* Assets.xcassets in Resources */,
+				7C83911D1C94013400E7AA60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C8391101C94013400E7AA60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C83911A1C94013400E7AA60 /* ViewController.swift in Sources */,
+				7C8391181C94013400E7AA60 /* AppDelegate.swift in Sources */,
+				7C8391201C94013400E7AA60 /* Money_IO.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C83911B1C94013400E7AA60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C83911C1C94013400E7AA60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C8391241C94013400E7AA60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C8391271C94013400E7AA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C8391281C94013400E7AA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C83912A1C94013400E7AA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Money IO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiloloco.Money-IO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C83912B1C94013400E7AA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Money IO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiloloco.Money-IO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C83910F1C94013400E7AA60 /* Build configuration list for PBXProject "Money IO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C8391271C94013400E7AA60 /* Debug */,
+				7C8391281C94013400E7AA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C8391291C94013400E7AA60 /* Build configuration list for PBXNativeTarget "Money IO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C83912A1C94013400E7AA60 /* Debug */,
+				7C83912B1C94013400E7AA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C83911F1C94013400E7AA60 /* Money_IO.xcdatamodel */,
+			);
+			currentVersion = 7C83911F1C94013400E7AA60 /* Money_IO.xcdatamodel */;
+			path = Money_IO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7C83910C1C94013400E7AA60 /* Project object */;
+}
