@@ -104,6 +104,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             flow.balance = self.balance
             flow.cashFlow = Double(self.textfield.text!)!
             flow.date = NSDate()
+            flow.posNum = true
             
             print(flow.balance)
             
@@ -136,6 +137,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             flow.balance = self.balance
             flow.cashFlow = Double(self.textfield.text!)!
             flow.date = NSDate()
+            flow.posNum = false
             
             print(flow.balance)
             

@@ -20,6 +20,13 @@ class FlowCell: UITableViewCell {
     }
     
     func configureCell(flow: Flow) {
+        
+        if flow.posNum == true {
+            self.financeLbl.textColor = UIColor.greenColor()
+        } else {
+            self.financeLbl.textColor = UIColor.redColor()
+        }
+        
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         self.financeLbl.text = formatter.stringFromNumber(flow.cashFlow!)

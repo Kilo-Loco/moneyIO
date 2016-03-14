@@ -4,8 +4,9 @@
         <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="cashFlow" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="posNum" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Flow" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Flow" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
