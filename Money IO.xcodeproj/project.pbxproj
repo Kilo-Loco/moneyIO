@@ -56,15 +56,47 @@
 		7C8391161C94013400E7AA60 /* Money IO */ = {
 			isa = PBXGroup;
 			children = (
-				7C8391171C94013400E7AA60 /* AppDelegate.swift */,
-				7C8391191C94013400E7AA60 /* ViewController.swift */,
-				7C83911B1C94013400E7AA60 /* Main.storyboard */,
-				7C8391211C94013400E7AA60 /* Assets.xcassets */,
-				7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */,
+				7C83912F1C968AE700E7AA60 /* Model */,
+				7C83912E1C968AE000E7AA60 /* View */,
+				7C83912D1C968AD100E7AA60 /* Controller */,
+				7C83912C1C968AC000E7AA60 /* Utilities */,
 				7C8391261C94013400E7AA60 /* Info.plist */,
-				7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */,
 			);
 			path = "Money IO";
+			sourceTree = "<group>";
+		};
+		7C83912C1C968AC000E7AA60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7C83912D1C968AD100E7AA60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C8391191C94013400E7AA60 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7C83912E1C968AE000E7AA60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */,
+				7C83911B1C94013400E7AA60 /* Main.storyboard */,
+				7C8391211C94013400E7AA60 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7C83912F1C968AE700E7AA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */,
+				7C8391171C94013400E7AA60 /* AppDelegate.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
