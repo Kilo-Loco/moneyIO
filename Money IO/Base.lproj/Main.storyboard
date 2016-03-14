@@ -49,7 +49,7 @@
                                 <rect key="frame" x="0.0" y="220" width="600" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZwG-LJ-Rah">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZwG-LJ-Rah" customClass="FlowCell" customModule="Money_IO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwG-LJ-Rah" id="EK1-Vs-pc9">
@@ -84,6 +84,10 @@
                                                 <constraint firstItem="VLf-bi-4PA" firstAttribute="centerY" secondItem="EK1-Vs-pc9" secondAttribute="centerY" id="yGq-dY-Zur"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="financeLbl" destination="VLf-bi-4PA" id="UyT-XV-Fqe"/>
+                                            <outlet property="timestampLbl" destination="9qe-zQ-dHG" id="Bhu-y3-pmJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -140,6 +144,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="cLA-us-rfZ" id="u5H-Sl-Len"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

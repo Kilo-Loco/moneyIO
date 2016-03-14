@@ -13,6 +13,7 @@
 		7C8391201C94013400E7AA60 /* Money_IO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C83911E1C94013400E7AA60 /* Money_IO.xcdatamodeld */; };
 		7C8391221C94013400E7AA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8391211C94013400E7AA60 /* Assets.xcassets */; };
 		7C8391251C94013400E7AA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */; };
+		7C8391311C968C1E00E7AA60 /* FlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8391301C968C1E00E7AA60 /* FlowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7C8391211C94013400E7AA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C8391241C94013400E7AA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8391261C94013400E7AA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C8391301C968C1E00E7AA60 /* FlowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				7C8391231C94013400E7AA60 /* LaunchScreen.storyboard */,
 				7C83911B1C94013400E7AA60 /* Main.storyboard */,
 				7C8391211C94013400E7AA60 /* Assets.xcassets */,
+				7C8391301C968C1E00E7AA60 /* FlowCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C83911A1C94013400E7AA60 /* ViewController.swift in Sources */,
+				7C8391311C968C1E00E7AA60 /* FlowCell.swift in Sources */,
 				7C8391181C94013400E7AA60 /* AppDelegate.swift in Sources */,
 				7C8391201C94013400E7AA60 /* Money_IO.xcdatamodeld in Sources */,
 			);

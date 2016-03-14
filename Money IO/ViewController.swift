@@ -19,9 +19,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell
-        return cell
+        if let cell = self.tableView.dequeueReusableCellWithIdentifier("FlowCell") as? FlowCell {
+            return cell
+        } else {
+            return FlowCell()
+        }
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
 
 }
 
