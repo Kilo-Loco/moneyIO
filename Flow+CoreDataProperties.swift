@@ -16,5 +16,6 @@ extension Flow {
 
     @NSManaged var date: NSDate?
     @NSManaged var cashFlow: NSNumber?
+    @NSManaged var balance: NSNumber?
 
 }

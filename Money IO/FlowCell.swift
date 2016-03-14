@@ -20,6 +20,9 @@ class FlowCell: UITableViewCell {
     }
     
     func configureCell(flow: Flow) {
-        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        self.financeLbl.text = formatter.stringFromNumber(flow.cashFlow!)
+        self.timestampLbl.text = NSDateFormatter.localizedStringFromDate(flow.date!, dateStyle: .ShortStyle, timeStyle: .ShortStyle)
     }
 }

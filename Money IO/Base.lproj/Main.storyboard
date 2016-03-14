@@ -37,11 +37,17 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJG-zl-W8z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-tc-Xhp">
                                         <rect key="frame" x="80" y="0.0" width="40" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="subBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djG-cY-JW1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -49,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="220" width="600" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZwG-LJ-Rah" customClass="FlowCell" customModule="Money_IO" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlowCell" id="ZwG-LJ-Rah" customClass="FlowCell" customModule="Money_IO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwG-LJ-Rah" id="EK1-Vs-pc9">
@@ -57,9 +63,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-zQ-dHG">
-                                                    <rect key="frame" x="478" y="11" width="114" height="21"/>
+                                                    <rect key="frame" x="406" y="11" width="186" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="114" id="BTA-Nz-BJT"/>
+                                                        <constraint firstAttribute="width" constant="186" id="BTA-Nz-BJT"/>
                                                         <constraint firstAttribute="height" constant="21" id="HFt-JQ-s8O"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -91,8 +97,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-VS-Baa">
-                                <rect key="frame" x="192" y="49" width="217" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-VS-Baa">
+                                <rect key="frame" x="192" y="49" width="217" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4zG-Un-pNp"/>
                                     <constraint firstAttribute="width" constant="217" id="yHV-by-cxU"/>
@@ -145,7 +151,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="balanceLbl" destination="DWU-VS-Baa" id="VeT-Mq-rpE"/>
                         <outlet property="tableView" destination="cLA-us-rfZ" id="u5H-Sl-Len"/>
+                        <outlet property="textfield" destination="z2L-iX-OxN" id="ZFa-MI-7m9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
