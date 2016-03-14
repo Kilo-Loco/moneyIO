@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var balanceLbl: UILabel!
+    @IBOutlet weak var textfield: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
+    
+    @IBAction func addBtn (sender: UIButton) {
+        
+    }
+    
+    @IBAction func subBtn (sender: UIButton) {
+        
+    }
+    
     
 
 }

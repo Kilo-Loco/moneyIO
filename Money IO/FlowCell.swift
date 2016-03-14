@@ -18,4 +18,8 @@ class FlowCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configureCell(flow: Flow) {
+        
+    }
 }
