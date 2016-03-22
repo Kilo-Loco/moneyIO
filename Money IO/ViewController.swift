@@ -19,6 +19,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var balance: Double = 0.00
     var APP: AppDelegate!
     var CONTEXT: NSManagedObjectContext!
+    var ENTITY: NSEntityDescription!
+    var FLOW: Flow!
     
     func updateBalance() {
         //self.balanceLbl.text = String(self.balance)
@@ -51,6 +53,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func updateFlow(isPositive: Bool) {
+        self.FLOW.balance = self.balance
+        self.FLOW.cashFlow = Double(self.textfield.text!)!
+        self.FLOW.date = NSDate()
+        self.FLOW.posNum = isPositive
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -58,6 +67,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         self.APP = UIApplication.sharedApplication().delegate as! AppDelegate
         self.CONTEXT = APP.managedObjectContext
+        self.ENTITY = NSEntityDescription.entityForName("Flow", inManagedObjectContext: self.CONTEXT)!
+        self.FLOW = Flow(entity: self.ENTITY, insertIntoManagedObjectContext: self.CONTEXT)
+        
         let fetchRequest = NSFetchRequest(entityName: "Flow")
         
         do {
@@ -105,20 +117,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.balance += Double(self.textfield.text!)!
             self.updateBalance()
             
+            self.updateFlow(true)
             
-            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: self.CONTEXT)!
-            let flow = Flow(entity: entity, insertIntoManagedObjectContext: self.CONTEXT)
-            
-            print(flow.balance)
-            
-            flow.balance = self.balance
-            flow.cashFlow = Double(self.textfield.text!)!
-            flow.date = NSDate()
-            flow.posNum = true
-            
-            print(flow.balance)
-            
-            self.CONTEXT.insertObject(flow)
+            self.CONTEXT.insertObject(self.FLOW)
             
             self.saveContext()
             
@@ -133,19 +134,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.balance -= Double(self.textfield.text!)!
             self.updateBalance()
             
-            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: self.CONTEXT)!
-            let flow = Flow(entity: entity, insertIntoManagedObjectContext: self.CONTEXT)
+            self.updateFlow(false)
             
-            print(flow.balance)
-            
-            flow.balance = self.balance
-            flow.cashFlow = Double(self.textfield.text!)!
-            flow.date = NSDate()
-            flow.posNum = false
-            
-            print(flow.balance)
-            
-            self.CONTEXT.insertObject(flow)
+            self.CONTEXT.insertObject(self.FLOW)
             
             self.saveContext()
             
