@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var flows = [Flow]()
     var balance: Double = 0.00
+    var APP: AppDelegate!
+    var CONTEXT: NSManagedObjectContext!
     
     func updateBalance() {
         //self.balanceLbl.text = String(self.balance)
@@ -40,17 +42,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func saveContext() {
+        do {
+            try self.CONTEXT.save()
+            print("flow was added to and saved")
+        } catch {
+            print("flow save error")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        let context = app.managedObjectContext
+        self.APP = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.CONTEXT = APP.managedObjectContext
         let fetchRequest = NSFetchRequest(entityName: "Flow")
         
         do {
-            let results = try context.executeFetchRequest(fetchRequest)
+            let results = try self.CONTEXT.executeFetchRequest(fetchRequest)
             
             guard let fetchedResults = results.last as? Flow else {
                 self.balance = 0.0
@@ -94,10 +105,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.balance += Double(self.textfield.text!)!
             self.updateBalance()
             
-            let app = UIApplication.sharedApplication().delegate as! AppDelegate
-            let context = app.managedObjectContext
-            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: context)!
-            let flow = Flow(entity: entity, insertIntoManagedObjectContext: context)
+            
+            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: self.CONTEXT)!
+            let flow = Flow(entity: entity, insertIntoManagedObjectContext: self.CONTEXT)
             
             print(flow.balance)
             
@@ -108,14 +118,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             print(flow.balance)
             
-            context.insertObject(flow)
+            self.CONTEXT.insertObject(flow)
             
-            do {
-                try context.save()
-                print("flow was added to and saved")
-            } catch {
-                print("flow save error")
-            }
+            self.saveContext()
+            
             self.textfield.text = ""
             self.fetchAndSetResult()
             self.tableView.reloadData()
@@ -127,10 +133,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.balance -= Double(self.textfield.text!)!
             self.updateBalance()
             
-            let app = UIApplication.sharedApplication().delegate as! AppDelegate
-            let context = app.managedObjectContext
-            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: context)!
-            let flow = Flow(entity: entity, insertIntoManagedObjectContext: context)
+            let entity = NSEntityDescription.entityForName("Flow", inManagedObjectContext: self.CONTEXT)!
+            let flow = Flow(entity: entity, insertIntoManagedObjectContext: self.CONTEXT)
             
             print(flow.balance)
             
@@ -141,14 +145,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             print(flow.balance)
             
-            context.insertObject(flow)
+            self.CONTEXT.insertObject(flow)
             
-            do {
-                try context.save()
-                print("flow was added to and saved")
-            } catch {
-                print("flow save error")
-            }
+            self.saveContext()
+            
             self.textfield.text = ""
             self.fetchAndSetResult()
             self.tableView.reloadData()
